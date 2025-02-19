@@ -1,0 +1,417 @@
+/* body {
+font-family: Arial, sans-serif;
+background-color: #e0e0e0;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.category-icon {
+    width: 24px;
+    height: 24px; 
+    object-fit: contain; 
+    margin-right: 8px; 
+
+.container {
+background: white;
+padding-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: auto;
+}
+
+.header {
+padding: 20px;
+background-color: #3e848c;
+color: white;
+font-size: 24px;
+font-weight: bold;
+}
+
+.nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background: #d8d8d8;
+padding: 10px;
+gap: 5px;
+}
+
+.nav div {
+text-align: center;
+cursor: pointer;
+flex: 1;
+padding: 10px;
+min-width: 100px;
+transition: background 0.3s ease;
+font-size: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+
+.nav div:hover,
+.nav div.active {
+background-color: #3e848c;
+color: white;
+border-radius: 5px;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+padding: 20px;
+}
+
+.button {
+background: #3e848c;
+color: white;
+padding: 10px 20px;
+border-radius: 15px;
+cursor: pointer;
+transition: background 0.3s ease;
+min-width: 150px;
+text-align: center;
+}
+
+.button:hover,
+.button.active {
+background: #2c5f63;
+}
+
+.menu {
+padding: 20px;
+}
+
+.item {
+background: #3e848c;
+color: white;
+margin: 10px 0;
+padding: 15px;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: transform 0.3s ease;
+flex-wrap: wrap;
+}
+
+.item:hover {
+transform: scale(1.02);
+}
+.show{
+    display: flex !important;
+}
+
+.item div {
+flex: 1;
+text-align: left;
+}
+
+.footer {
+background: #3e848c;
+color: white;
+padding: 20px;
+margin-top: 20px;
+border-radius: 0 0 10px 10px;
+font-size: 14px;
+}
+
+.footer span {
+font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.container {
+ width: 100%;
+ margin: 0;
+ border-radius: 0;
+}
+
+.header {
+ border-radius: 0;
+}
+
+
+
+.nav {
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.nav div {
+ width: 48%;
+ min-width: unset;
+ padding: 10px;
+ font-size: 14px;
+}
+
+.buttons {
+ flex-direction: row;
+ justify-content: center;
+ gap: 10px;
+}
+
+.button {
+ flex: 1;
+ padding: 12px;
+ font-size: 14px;
+ min-width: 120px;
+}
+
+.item {
+ flex-direction: column;
+ text-align: center;
+ padding: 10px;
+}
+
+.footer {
+ border-radius: 0;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+ width: 100%;
+ margin: 0;
+ border-radius: 0;
+}
+.nav {
+ flex-direction: column;
+}
+
+.nav div {
+ width: 100%;
+}
+
+.buttons {
+ flex-direction: column;
+}
+
+.button {
+ width: 95%;
+}
+
+}
+
+.header img{
+    width: 100px;
+    height: 70px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+} */
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+    .category-icon {
+        width: 24px; /* Set the desired width */
+        height: 24px; /* Set the desired height */
+        object-fit: contain; /* Ensures the image scales properly */
+        margin-right: 8px; /* Add spacing between the icon and text */
+    }
+    
+    .container {
+    background: white;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    }
+    
+    /* Header */
+    .header {
+    padding: 20px;
+    background-color: #3e848c;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    /* border-radius: 10px 10px 0 0; */
+    }
+    
+    /* Navigation Bar */
+    .nav {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    background: #d8d8d8;
+    padding: 10px;
+    gap: 5px;
+    }
+    
+    .nav div {
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    min-width: 100px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    }
+    
+    .nav div:hover,
+    .nav div.active {
+    background-color: #3e848c;
+    color: white;
+    /* border-radius: 5px; */
+    }
+    
+    /* Buttons */
+    .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    }
+    
+    .button {
+    background: #3e848c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 150px;
+    text-align: center;
+    }
+    
+    .button:hover,
+    .button.active {
+    background: #2c5f63;
+    }
+    
+    /* Menu Items */
+    .menu {
+    padding: 20px;
+    }
+    
+    .item {
+    background: #3e848c;
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    flex-wrap: wrap;
+    }
+    
+    .item:hover {
+    transform: scale(1.02);
+    }
+    
+    .item div {
+    flex: 1;
+    text-align: left;
+    }
+    
+    /* Footer */
+    .footer {
+    background: #3e848c;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    }
+    
+    .footer span {
+    font-weight: bold;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .container {
+     width: 100%;
+     margin: 0;
+     border-radius: 0;
+    }
+    
+    .header {
+     border-radius: 0;
+    }
+    
+    .nav {
+     flex-direction: row;
+     /* flex-wrap: wrap; */
+     justify-content: center;
+    }
+    
+    .nav div {
+     width: 48%;
+     min-width: unset;
+     padding: 10px;
+     font-size: 14px;
+    }
+    
+    .buttons {
+     flex-direction: row;
+     justify-content: center;
+     gap: 10px;
+    }
+    
+    .button {
+     flex: 1;
+     padding: 12px;
+     font-size: 14px;
+     min-width: 120px;
+    }
+    
+    .item {
+     flex-direction: column;
+     text-align: center;
+     padding: 10px;
+    }
+    
+    .footer {
+     border-radius: 0;
+    }
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    @media (max-width: 480px) {
+    .container {
+     width: 100%;
+     margin: 0;
+     border-radius: 0;
+    }
+    /* .nav {
+     flex-direction: column;
+    } */
+    
+    .nav div {
+     width: 100%;
+    }
+    
+    /* .buttons {
+     flex-direction: column;
+    } */
+    
+    .button {
+     width: 95%;
+    }
+    
+    }
+    .header img{
+        width: 100px;
+    }
+    
+    

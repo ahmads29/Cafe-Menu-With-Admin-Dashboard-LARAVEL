@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;400;500&family=Fira+Sans:wght@300&family=Gowun+Dodum&family=Protest+Riot&family=Rubik+Scribble&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Teachers", sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0%;
+    padding: 0px;
+    background: url(back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap: nowrap;
+    overflow-x: scroll; 
+    scrollbar-width: none;
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .header-menu {
+        justify-content: flex-start; 
+    } 
+}
+
+.header-menu::-webkit-scrollbar {
+    display: none; 
+}
+
+.header-menu a {
+    text-decoration: none;
+    background-color: #d3ba8e;
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid black;
+    margin: 0px;
+}
+
+.header-menu li {
+    margin: 10px;
+    flex: 0 0 auto; 
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav h1 {
+    margin: 0px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    opacity: 80%;
+    margin: 0px;
+    padding: 20px 0;
+    height: 80px;
+    top: 0%;
+    position: sticky;
+    z-index: 975;
+}
+
+.main-container {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.item-img img {
+    width: 180px;
+    height: 145px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item-img {
+    position: relative;
+}
+
+/* Default styling for the heart icon */
+.favorite-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px; /* Adjust the size of the heart icon */
+    color: #bd9d7f; /* Default color */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    scale: 1.2;
+}
+
+/* On hover, heart becomes red and grows */
+.favorite-icon:hover {
+    color: red; /* Change color on hover */
+    transform: scale(1.2); /* Make it bigger */
+}
+
+/* When the heart icon is clicked, it stays red */
+.favorite-icon.active {
+    color: red; /* Active color */
+    transform: scale(1.2); /* Keep it slightly larger */
+}
+
+/* Ensure that the icon can scale larger on hover after being clicked */
+.favorite-icon.active:hover {
+    transform: scale(1.3); /* Increase scale when hovered after click */
+}
+
+.items-container {
+    background-color: #bda67f85;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid #bda67f;
+    margin: 5px;
+}
+
+.item-details {
+    padding: 5px;
+}
+
+.category-container {
+    margin-bottom: 20px; /* Space between categories */
+    text-align: center; /* Center align the category title */
+}
+
+.category-title {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Space between title and items */
+}
+
+.items-container-scroll {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px 0; /* Padding around the items */
+}
+
+.items-container {
+    flex: 0 0 auto; /* Prevent items from stretching */
+    margin-right: 10px; /* Space between items */
+    width: 180px; /* Set a fixed width for the items */
+}
+
+footer {
+    background-color: #ffffff;
+    opacity: 60%;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+/* Dynamic content container */
+#dynamic-content {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Ensure it's on top of the blurred content */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* When active, display the dynamic content */
+#dynamic-content.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Full-page popup styling */
+.full-page-popup {
+    position: fixed;
+    top: 50%; /* Vertically center it */
+    left: 50%; /* Horizontally center it */
+    transform: translate(-50%, -50%) scale(1); /* Start small for animation */
+    width: 80%; /* Adjust width */
+    height: auto; /* Let content determine height */
+    max-width: 500px; /* Set a maximum width for the popup */
+    background-color: white;
+    z-index: 1001; /* Make sure it's on top of everything else */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially invisible */
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Active state: Show the popup */
+.full-page-popup.active {
+    transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+    opacity: 1;
+}
+
+/* Back button styling */
+#backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Card content styling */
+.card-content {
+    text-align: center;
+}
+
+.card-content img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.card-content .price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000;
+}
